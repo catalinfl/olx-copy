@@ -1,0 +1,195 @@
+@import "../../scss/__variables";
+@import '../../scss/__responsive';
+
+@include xs {
+    .navbar {
+        &__infoIcon {
+            font-size: 1.5rem;
+        }
+
+        &__logoImg {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__infoText {
+            display: none;
+        }
+
+        &__buttonAdd {
+            font-size: 0.75rem;
+            padding: 0.25rem;
+        }
+    }
+}
+
+@include xs-sm {
+    .navbar {
+        &__infoIcon {
+            font-size: 0.75rem;
+        }
+
+        &__logoImg {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__infoText {
+            font-size: 0.75rem;
+        }
+
+        &__buttonAdd {
+            font-size: 0.75rem;
+            padding: 0.25rem;
+        }
+    }
+}
+
+@include sm-md {
+    .navbar {
+        &__infoIcon {
+            font-size: 0.75rem;
+        }
+
+        &__logoImg {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__infoText {
+            font-size: 0.75rem;
+        }
+
+        &__buttonAdd {
+            font-size: 0.75rem;
+            padding: 0.25rem;
+        }
+    }
+}
+
+@include md-lg {
+    .navbar {
+        &__infoIcon {
+            font-size: 1rem;
+        }
+
+        &__logoImg {
+            width: 75px;
+            height: 75px;
+        }
+
+        &__infoText {
+            font-size: 1rem;
+        }
+
+        &__buttonAdd {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+}
+
+@include lg-xl {
+    .navbar {
+        &__infoIcon {
+            font-size: 1.25rem;
+        }
+
+        &__logoImg {
+            width: 100px;
+            height: 100px;
+        }
+
+        &__infoText {
+            font-size: 1.25rem;
+        }
+
+        &__buttonAdd {
+            font-size: 1.25rem;
+            padding: 0.75rem;
+        }
+    }
+}
+
+@include xl {
+    .navbar {
+        &__infoIcon {
+            font-size: 1.25rem;
+        }
+
+        &__logoImg {
+            width: 100px;
+            height: 100px;
+        }
+
+        &__infoText {
+            font-size: 1.25rem;
+        }
+
+        &__buttonAdd {
+            font-size: 1.25rem;
+            padding: 0.75rem;
+        }
+    }
+}
+
+.navbar {
+    background-color: $navColor;
+    color: white;
+    font-family: $fontFamily;
+    flex-direction: row;
+    
+
+    // containers
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: $lg;
+        margin: auto;
+    }
+
+    &__infoContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__logo {
+        display: flex;
+        cursor: pointer;
+    }
+
+    // elements
+
+    &__infoItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    &__infoText {
+        margin: auto;
+        cursor: pointer;
+    }
+
+    &__infoIcon {
+        margin: auto;
+        cursor: pointer;
+    }
+
+    &__buttonAdd {
+        display: flex;
+        border: solid 1px white;
+        outline: none;
+        cursor: pointer;
+        background-color: white;
+        color: $navColor;
+        font-family: $fontFamily;
+        border-radius: 10px;
+    }
+}
+
+

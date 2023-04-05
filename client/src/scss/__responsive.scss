@@ -1,7 +1,7 @@
 @import '__variables';
 
 @mixin xs {
-    @media screen and (max-width: $xs) {
+    @media screen and (min-width: 0px) and (max-width: $xs) {
         @content;
     }
 }

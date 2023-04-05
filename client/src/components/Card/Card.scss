@@ -1,0 +1,59 @@
+@import '../../scss/_responsive';
+@import '../../scss/_variables';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 320px;
+    width: 300px;
+    font-family: $fontFamily;
+    background-color: white;
+    margin-left: 2.5vw;
+    cursor: pointer;
+    padding: 5px;
+
+    .cardImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .cardImage {
+            height: 230px;
+            width: 280px;
+        }
+    }
+
+    .cardBody {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+
+        .cardTitleContainer {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+
+            .cardTitle {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+        }
+
+        .cardSecondContainer {
+            margin-top: 1rem;
+
+            .cardLocation {
+                font-size: 0.8rem;
+                color: rgb(53, 53, 53);
+            }
+
+            .cardPrice {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

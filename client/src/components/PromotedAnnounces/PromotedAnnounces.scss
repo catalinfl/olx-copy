@@ -1,0 +1,104 @@
+@import "../../scss/__variables";
+@import '../../scss/__responsive';
+
+@include xs-sm {
+    .promoted {
+        &Container {
+            width: $sm;
+            justify-content: center;
+        }
+        
+        &__body {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+@include sm-md {
+    @include md-lg {
+        .promoted {
+            &Container {
+                width: $sm;
+                justify-content: center;
+            }
+            
+            &__body {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@include md-lg {
+    .promoted {
+        &Container {
+            width: $sm;
+            justify-content: center;
+        }
+        
+        &__body {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+@include lg-xl {
+        .promoted {
+            &Container {
+                width: $lg;
+            }
+    
+            &__body {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+}
+
+
+@include xl {
+
+    .promoted {
+        &Container {
+            width: $lg;
+        }
+
+        &__body {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+
+
+.promoted {
+    display: flex;
+    width: 100%; 
+    background-color: $searchColor;
+    font-family: $fontFamily;
+    margin-top: 2rem;
+
+    &Container {
+        margin: 0 auto;
+    }
+    
+    &__titleContainer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    &__body {
+        margin: 0 auto;
+        display: grid;
+        width: 100%;
+        gap: 2rem 0;
+    }
+}

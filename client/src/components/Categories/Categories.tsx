@@ -1,5 +1,4 @@
 import React from 'react'
-import './Categories.scss'
 import CategoriesItem from './CategoriesItem'
 
 const Categories = () => {

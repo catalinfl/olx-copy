@@ -1,0 +1,30 @@
+.infoCategories {
+    width: 100%;
+    display: flex;
+
+    &Container {
+        display: flex;
+        justify-content: center;
+        max-width: $lg;
+        font-family: $fontFamily;
+        flex-direction: column;
+        padding: 0 1rem;
+        margin: 0 auto;  
+        height: 275px;      
+    }
+
+    &__title {
+        font-size: 1rem;
+        color: $navColor;
+        font-weight: 800;
+    }
+
+    &__text {
+        font-size: 0.85rem;
+    }
+
+    &Image {
+        width: 144px;
+        height: 144px;
+    }
+}

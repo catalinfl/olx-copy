@@ -1,5 +1,4 @@
 import React from 'react'
-import '/src/components/Navbar/Navbar.scss'
 import { AiOutlineMessage } from "react-icons/ai"
 import { AiOutlineHeart } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'

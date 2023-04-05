@@ -1,3 +1,12 @@
+@import './components/Navbar/Navbar.scss';
+@import './components/InfoBoard/InfoBoard.scss';
+@import './components/PromotedAnnounces/PromotedAnnounces.scss';
+@import './components/SearchInput/Search.scss';
+@import './components/SecondaryInfoBoard/SecondaryInfoBoard.scss';
+@import './components/Categories/Categories.scss';
+@import './components/Card/Card.scss';
+@import './components/InfoCategories/InfoCategories.scss';
+
 * {
     box-sizing: border-box;
     margin: 0;

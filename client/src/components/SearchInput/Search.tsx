@@ -1,5 +1,4 @@
 import React from 'react'
-import './Search.scss'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { CiLocationOn } from 'react-icons/ci'
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Card.scss'
 import Image from '../../assets/download.jpg'
 
 const Card = () => {

@@ -138,10 +138,10 @@
     color: white;
     font-family: $fontFamily;
     flex-direction: row;
+    width: 100%;
     
-
     // containers
-
+    
     &__container {
         display: flex;
         flex-direction: row;

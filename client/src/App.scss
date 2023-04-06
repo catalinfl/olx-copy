@@ -6,6 +6,16 @@
 @import './components/Categories/Categories.scss';
 @import './components/Card/Card.scss';
 @import './components/InfoCategories/InfoCategories.scss';
+@import './components/Footer/Footer.scss';
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+img::selection {
+    background-color: transparent;
+}
 
 * {
     box-sizing: border-box;

@@ -60,7 +60,6 @@
 @include xs-sm {
     .search {
         height: 75px;
-        border: solid 1px red;
 
         &__container {
             max-width: $sm;
@@ -116,7 +115,6 @@
 @include sm-md {
     .search {
         height: 100px;
-        border: solid 1px red;
 
         &__container {
             max-width: $md;

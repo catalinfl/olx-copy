@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../assets/juicy.svg'
+import Image from '../../assets/images/juicy.svg'
 
 const InfoBoard = () => {
   return (

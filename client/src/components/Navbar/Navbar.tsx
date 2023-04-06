@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineMessage } from "react-icons/ai"
 import { AiOutlineHeart } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/images/logo.svg'
 
 const Navbar = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../assets/audit.svg'
+import Image from '../../assets/images/audit.svg'
 const InfoCategories = () => {
   return (
     <div className="infoCategories">

@@ -14,7 +14,7 @@
         color: $navColor;
         margin: auto;
         display: flex;
-        height: 200px;
+        min-height: 200px;
         align-items: center;
         max-width: $sm;
         font-size: 0.85rem;

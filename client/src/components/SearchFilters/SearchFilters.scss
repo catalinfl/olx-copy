@@ -1,0 +1,168 @@
+@mixin smallSearchFiltersMisc {
+    .searchFiltersContainer__misc {
+        flex-direction: column;
+
+        &__services {
+            width: 100%;
+        }
+
+    }
+    .searchFiltersContainer__misc__save  {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@mixin bigSearchFiltersMisc {
+
+    .searchFiltersContainer__misc {
+        flex-direction: row;
+
+        &__services {
+            width: 60%;
+        }
+    }
+    .searchFiltersContainer__misc__save  {
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+}
+
+@include xs {
+    @include smallSearchFiltersMisc;
+}
+
+@include xs-sm {
+    @include smallSearchFiltersMisc;
+}
+
+@include sm-md {
+    @include bigSearchFiltersMisc;
+}
+
+@include md-lg {
+    @include bigSearchFiltersMisc;
+}
+
+@include lg-xl {
+    @include bigSearchFiltersMisc;
+}
+
+@include xl {
+    @include bigSearchFiltersMisc;
+}
+
+
+.searchFilters {
+    display: flex;
+    width: 100%;
+
+    &Container {
+        display: flex;
+        flex-direction: column;
+        width: $lg;
+        margin: 0 auto;
+        font-family: $fontFamily;
+
+        &__misc {
+            display: flex;
+            width: 100%;
+            // flex-direction: row;
+
+            &__services {
+                // width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;   
+                
+                &__item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+
+        &__find {
+            display: flex;
+            font-family: $fontFamily;
+            flex-direction: column;
+        }
+
+        &__filter {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__select {
+            transition: all 0.5s;
+            font-family: $fontFamily;
+            outline: none;
+            padding: 10px;
+            height: 50px;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: $navColor;
+            }
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+
+            p {
+                padding-left: 1rem;
+            }
+            
+            
+            .searchFiltersInputPart {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+
+                input {
+                    height: 50px;
+                    padding: 10px;
+                    border: solid 1px grey;
+                    width: 90px;
+                    font-size: 1.1rem;
+                    font-family: $fontFamily;
+                }
+
+            }
+        }
+
+        
+    }
+        &Container__misc__save {
+            width: 100%;
+            display: flex;
+            // justify-content: flex-end;
+
+            .searchFiltersSaveButton {
+                display: flex;
+                background-color: transparent;
+                border: solid 1px grey;
+                padding: 1rem;
+                font-family: $fontFamily;
+                cursor: pointer;
+                outline: none;
+                font-size: 1rem;
+                transition: all 1s;
+                align-items: center;
+
+                .searchFiltersIcon {
+                    font-size: 1.5rem;
+                    margin-right: 5px;
+                }
+            
+                &:hover {
+                    color: white;
+                    background-color: $navColor;
+                }
+            }
+        }
+}

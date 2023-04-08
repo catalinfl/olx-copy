@@ -28,34 +28,97 @@
     }
 }
 
+@mixin smallSearchFiltersFind {
+    .searchFiltersContainer {
+
+        &__filter {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            p {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &__sort {
+             flex-direction: column;
+        }
+        }
+    }
+
+@mixin bigSearchFiltersFind {
+    .searchFiltersContainer__filter {
+            width: 100%;
+            align-items: center;
+            // justify-content: center;
+            flex-direction: row;
+
+            p {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+@mixin select {
+    select {
+        transition: all 0.5s;
+        font-family: $fontFamily;
+        outline: none;
+        padding: 5px;
+        height: 40px;
+        font-size: 1.2rem;
+
+        &:hover {
+            color: $navColor;
+        }
+    }
+}
+
 @include xs {
     @include smallSearchFiltersMisc;
+    @include smallSearchFiltersFind;
 }
 
 @include xs-sm {
     @include smallSearchFiltersMisc;
+    @include smallSearchFiltersFind;
 }
 
 @include sm-md {
     @include bigSearchFiltersMisc;
+    @include smallSearchFiltersFind;
 }
 
 @include md-lg {
     @include bigSearchFiltersMisc;
+    @include bigSearchFiltersFind;
 }
 
 @include lg-xl {
     @include bigSearchFiltersMisc;
+    @include bigSearchFiltersFind;
 }
 
 @include xl {
     @include bigSearchFiltersMisc;
+    @include bigSearchFiltersFind;
 }
 
 
 .searchFilters {
     display: flex;
     width: 100%;
+    padding: 20px 0px;
+    background-color: $backgroundColor;
+
 
     &Container {
         display: flex;
@@ -64,13 +127,25 @@
         margin: 0 auto;
         font-family: $fontFamily;
 
+        &__sort {
+            // flex-direction: row;
+            display: flex;
+            margin-top: 1rem;
+            justify-content: center;
+
+            p {
+                margin: 0 15px;
+                display: flex;
+                align-items: center;
+            }
+
+        }
+
         &__misc {
             display: flex;
             width: 100%;
-            // flex-direction: row;
 
             &__services {
-                // width: 60%;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;   
@@ -79,7 +154,7 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 10px;
+                    gap: 5px;
                 }
             }
         }
@@ -88,34 +163,39 @@
             display: flex;
             font-family: $fontFamily;
             flex-direction: column;
+            border-bottom: solid 1px grey;
         }
 
         &__filter {
             display: flex;
-            flex-direction: row;
         }
 
-        &__select {
-            transition: all 0.5s;
-            font-family: $fontFamily;
-            outline: none;
-            padding: 10px;
-            height: 50px;
-            font-size: 1.2rem;
+        &__searchCategories {
 
-            &:hover {
-                color: $navColor;
+            p {
+                display: inline-block;
+                margin-right: 5px;
+                color: grey;
+                font-size: 0.85rem;
+            
+                &:hover {
+                    color: white;
+                    cursor: pointer;
+                    background-color: $navColor;
+                }
             }
+
+
+
+            margin-top: 2rem;
         }
+
+        @include select;
 
         &__price {
             display: flex;
             flex-direction: column;
             width: 20%;
-
-            p {
-                padding-left: 1rem;
-            }
             
             
             .searchFiltersInputPart {
@@ -124,7 +204,7 @@
                 justify-content: space-around;
 
                 input {
-                    height: 50px;
+                    height: 40px;
                     padding: 10px;
                     border: solid 1px grey;
                     width: 90px;
@@ -134,13 +214,11 @@
 
             }
         }
-
-        
     }
+
         &Container__misc__save {
             width: 100%;
             display: flex;
-            // justify-content: flex-end;
 
             .searchFiltersSaveButton {
                 display: flex;
@@ -165,4 +243,25 @@
                 }
             }
         }
+
+        &Container__removeFilter {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            cursor: pointer;
+        }
+
+        .searchFiltersCard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
 }

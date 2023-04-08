@@ -27,10 +27,10 @@ export default function SearchFiltersFind() {
                 </select>
             </div>
             <div className="searchFiltersContainer__price">
-                <p> Pret </p>
+                <p className="textPrice"> Pret </p>
                 <div className="searchFiltersInputPart">
-                <input type="number" placeholder="De la" />
-                <input type="number" placeholder="Pana la" />
+                <input type="number" min="0" placeholder="De la" />
+                <input type="number" min="10" placeholder="Pana la" />
                 </div>
             </div>
         </div>

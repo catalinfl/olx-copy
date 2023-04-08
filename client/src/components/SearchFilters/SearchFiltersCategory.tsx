@@ -10,7 +10,7 @@ export default function SearchFiltersCategory() {
                 <option value="price"> Pret </option>
                 <option value="date"> Data </option>
             </select>
-            Cum sunt anunturile organizate?
+            <p> Cum sunt anunturile organizate? </p>
             <p> Moneda: </p>
             <select name="currency" id="currency">
                 <option value="RON"> RON </option>
@@ -18,17 +18,17 @@ export default function SearchFiltersCategory() {
             </select>
         </div>
         <div className="searchFiltersContainer__searchCategories">
-            <p> Auto, moto si imbarcatiuni </p>
-            <p> Imobiliare </p>
-            <p> Electronice si electrocasnice </p>
-            <p> Animale de companie </p>
-            <p> Sport si timp liber </p>
-            <p> Moda si frumusete </p>
-            <p> Copii si bebelusi </p>
-            <p> Casa si gradina </p>
-            <p> Hobby, arta si colectii </p>
-            <p> Muzica, filme si carti </p>
-            <p> Servicii </p>
+            <p> Auto, moto si imbarcatiuni, </p>
+            <p> Imobiliare, </p>
+            <p> Electronice si electrocasnice, </p>
+            <p> Animale de companie, </p>
+            <p> Sport si timp liber, </p>
+            <p> Moda si frumusete, </p>
+            <p> Copii si bebelusi, </p>
+            <p> Casa si gradina, </p>
+            <p> Hobby, arta si colectii, </p>
+            <p> Muzica, filme si carti, </p>
+            <p> Servicii, </p>
             <p> Locuri de munca </p>
         </div>
     </div>

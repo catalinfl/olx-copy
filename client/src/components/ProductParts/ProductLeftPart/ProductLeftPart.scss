@@ -1,14 +1,41 @@
+@include xs {
+    .productLeftPart {
+        .productLeftPartImage {
+            width: 100%;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .icon {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@include xl {
+    .productLeftPart {
+        .productLeftPartImage {
+            height: 600px;
+            img {
+                width: 700px;
+            }
+        }
+    }
+}
+
 .productLeftPart {
     font-family: $fontFamily;
     display: flex;
     flex-direction: column;
     background-color: $buttonActiveTextColor;
-    gap: 2rem;
+    gap: 2rem 0rem;
     padding: 10px;
 
     .productLeftPartImage { 
         display: flex;
-        height: 600px;
         align-items: center;
         justify-content: center;
         position: relative;
@@ -16,9 +43,7 @@
 
         img {
             display: flex;
-            height: auto;
-            width: 700px;
-            height: auto;
+            // width: 700px;
             object-fit: contain;
         }
 

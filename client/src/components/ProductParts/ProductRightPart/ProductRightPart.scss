@@ -1,4 +1,158 @@
 .productRightPart {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem 0px;
+
+    .productAboutUser {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        font-family: $fontFamily;
+        background-color: white;
+
+        .productMisc {
+            display: flex;
+            padding: 10px;
+            font-weight: 700;
+            align-items: center;
+            
+            .icon {
+                font-size: 1.5rem;
+                margin-left: 10px;
+            }
+        }
+
+        .productUserContainer {
+            display: flex;
+            align-items: center;
+            justify-content:baseline;
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            
+            img {
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+            }
+
+            .productUserInfoContainer {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                .productUserName {
+                    display: flex;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+
+                .productUserRegister, .productUserLastLogin {
+                    color: grey;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .productUserRating {
+            padding: 10px;
+            margin-top: 1.2rem;
+            background-color: rgb(221, 225, 245);
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            color: $navColor;
+
+            .productUserRatingContainer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .icon {
+                    display: flex;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .ratingQuestion {
+                display: flex;
+                align-items: flex-end;
+                height: 100%;
+                font-size: 0.85rem;
+                text-decoration: underline;
+                font-weight: 700;
+            }            
+        }
+        .buttonContainer {
+            display: flex;
+            justify-content: center;
+            gap: 0px 2rem;
+            margin-top: 1.5rem;
+
+            .productUserButton {
+                background-color: transparent;
+                padding: 1rem;
+                border: none;
+                outline: none;
+                font-weight: 600;
+                font-family: $fontFamily;
+                border-radius: 5px;
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
+            
+            .call {
+                border: solid 2px $navColor;
+                color: $navColor;
+            }
+            
+            .send {
+                background-color: $navColor;
+                color: white;
+            }
+        }
+
+        .info {
+            margin-top: 1rem;
+            font-weight: 800;
+            display: flex;
+            text-decoration: underline;
+            color: $navColor;
+            justify-content: center;
+        }
+
+    }
+        .productLocationContainer {
+            background-color: white;
+            padding: 1rem;
+            font-family: $fontFamily;
+
+            .productTitle {
+                font-size: 0.75rem;
+            }
+
+            .productLocation {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $navColor;
+
+                .icon {
+                    font-size: 3rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+
+                span {
+                    font-size: 0.75rem;
+                }
+
+                .locationImage {
+                    max-width: 150px;
+                    height: auto;
+                }
+            }
+        }
 }

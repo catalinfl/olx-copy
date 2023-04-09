@@ -27,7 +27,7 @@
 
     .productHistoryTitleContainer {
         display: flex;
-        width: 100%;
+        max-width: 100%;
         font-weight: 200;
         font-family: $fontFamily;
         font-size: 17px;

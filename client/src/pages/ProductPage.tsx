@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import ProductHistory from '../components/ProductParts/ProductHistory/ProductHistory'
 import ProductId from '../components/ProductParts/ProductId/ProductId'
@@ -11,6 +12,7 @@ const ProductPage = () => {
         <Search />
         <ProductHistory />
         <ProductId />
+        <Footer />
     </div>
     )
 }

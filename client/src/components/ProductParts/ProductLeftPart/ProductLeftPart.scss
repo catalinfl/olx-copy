@@ -1,0 +1,236 @@
+.productLeftPart {
+    font-family: $fontFamily;
+    display: flex;
+    flex-direction: column;
+    background-color: $buttonActiveTextColor;
+    gap: 2rem;
+    padding: 10px;
+
+    .productLeftPartImage { 
+        display: flex;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: white;
+
+        img {
+            display: flex;
+            height: auto;
+            width: 700px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .icon {
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        .iconAbs {
+            position: absolute;
+            cursor: pointer;
+            bottom: 1rem;
+            right: 0.5rem;
+            font-size: 2rem;
+        }
+    }
+
+    .productDescription {
+        display: flex;
+        padding: 1.25rem;
+        background-color: white;
+        flex-direction: column;
+
+        .productTime {
+            font-size: 13px;
+            color: grey;
+            padding-bottom: 1rem;
+        }
+
+        .productTitle {
+            font-size: 25px;
+            font-weight: 400;
+            margin-bottom: -0.55rem;
+        }
+
+        .productPrice {
+            font-weight: 800;
+            font-size: 2rem;
+        }
+
+        .productButtonContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .productButton {
+                border: none;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 20px 0px;
+                font-family: $fontFamily;
+                background-color: transparent;
+                letter-spacing: 1px;
+                align-items: center;
+                cursor: pointer;
+                display: flex;
+
+                .icon {
+                    font-size: 15px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .productPerson {
+            border: solid 3px $navColor;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: transparent;
+            font-family: $fontFamily;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .productDesc {
+            border-bottom: solid 1px grey;
+            padding: 1rem 0px;
+        }
+
+        .productMiscInfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            p {
+                font-size: 12px;
+                color: grey;
+            }
+
+            .reportContainer {
+                display: flex;
+                gap: 7px;
+                justify-content: center;
+                cursor: pointer;
+
+                .reportButton {
+                    font-family: $fontFamily;
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: rgb(233, 118, 56);
+                    font-weight: 700;
+                    border-bottom: solid 2px rgb(233, 118, 56);
+                }
+            }
+        }
+    }
+
+    .productSellerContainer {
+        background-color: white;
+        display: flex;
+        font-family: $fontFamily;
+        padding: 1rem;
+        
+
+        .productSellerLeftPart {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            justify-content: center;
+
+            .productSeller {
+                font-weight: 700;
+                padding-left: 5px;
+                text-transform: uppercase;
+                
+                &Info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 30px;
+                    height: 100px;
+                }
+            }
+
+            .sellerImage {
+                border-radius: 100%;
+                width: 75px;
+                height: 75px;
+
+            }
+
+            .sellerName {
+                font-weight: 700;
+            }
+
+            .sellerRegister, .lastLogin {
+                color: grey;
+                font-size: 14px;
+            }
+
+        }
+
+        .productSellerRightPart {
+            display: flex;
+            width: 60%;
+            flex-direction: column;
+
+            .sendMessageContainer {
+                display: flex;
+                align-items: center;                
+                justify-content: center;
+
+                .productSellerButton {
+                    background-color: $navColor;
+                    font-family: $fontFamily;
+                    color: white;
+                    padding: 10px;
+                    font-size: 1.25rem;
+                    border: none;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    min-width: 200px;
+                    max-width: 450px;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+
+            .phoneNumberContainer {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                justify-content: center;
+                gap: 10px;
+
+                .phoneNumber {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+
+                .showNumberButton {
+                    background-color: white;
+                    font-family: $fontFamily;
+                    color: $navColor;
+                    padding: 10px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    outline: none;
+                }
+
+                .icon {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    } 
+}

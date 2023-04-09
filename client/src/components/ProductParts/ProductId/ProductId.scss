@@ -1,0 +1,21 @@
+.productId {
+    width: 100%;
+    .productContainer {
+        display: flex;
+        max-width: $lg;
+        margin: 0 auto;
+        flex-direction: row;
+
+        .leftPart {
+            display: flex;
+            border: solid 1px green;
+            flex: 2;
+        }
+
+        .rightPart {
+            display: flex;
+            flex: 1;
+            border: solid 1px red;
+        }
+    }
+}

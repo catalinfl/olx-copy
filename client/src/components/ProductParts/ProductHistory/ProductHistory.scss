@@ -1,0 +1,40 @@
+.productHistory {
+
+    &Container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: $lg;
+        margin: 0 auto;
+    }
+
+
+    &ButtonContainer {
+        padding-left: 10px;
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &Button {
+        padding: 15px;
+        font-size: 15px;
+        background-color: transparent;
+        font-family: $fontFamily;
+        border: none;
+    }
+
+    .productHistoryTitleContainer {
+        display: flex;
+        width: 100%;
+        font-weight: 200;
+        font-family: $fontFamily;
+        font-size: 17px;
+        text-decoration: underline;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+}
